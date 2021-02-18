@@ -33,15 +33,7 @@ colorList.forEach((color) => {
   selectColor.append(colorOption);
 });
 
-/*selectFont.addEventListener('change', () => {
-
-  let option = selectFont.value;
-  if(fontList.includes(option))
-  {
-    document.querySelector('h1').style.fontFamily = option;
-  } 
-});*/
-
+//trigger for changing font
 btnShowFont.addEventListener('click', function()
 {
   let option = selectFont.value;
@@ -109,8 +101,8 @@ else if(CurrentHour > 20 || CurrentHour <= 4)
 clockTime = () =>
 {
   let time = new Date();
-  //let hour = time.getHours();
-  let hour = 13;
+  let hour = time.getHours();
+  //let hour = 13;
   let min = time.getMinutes();
   let sec = time.getSeconds();
 
@@ -147,15 +139,11 @@ clockTime = () =>
     if(hour >= 12 && hour != 24)
     {
       hour = lessThan10Format(hour - 12);
-      //dateDisplay.textContent = hour + ':' + min + ':' + sec + ' ' + am_pm;
-      //btnChangeFormat.textContent = 'Click again to 24 Hour Format';
     }
     else if (hour == 24)
     {
       am_pm = 'AM'
       hour = lessThan10Format(hour - 12);
-      //dateDisplay.textContent = hour + ':' + min + ':' + sec + ' ' + am_pm;
-      //btnChangeFormat.textContent = 'Click again to 24 Hour Format';
     }
 
     dateDisplay.textContent = hour + ':' + min + ':' + sec + ' ' + am_pm;
