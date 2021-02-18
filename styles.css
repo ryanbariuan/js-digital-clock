@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Nimbus-Sans-D-OT-Light_32752;
+  src: url(fonts/Nimbus-Sans-D-OT-Light_32752.ttf);
+}
+
+@font-face {
+  font-family: DS-DIGI;
+  src: url(fonts/ds_digital/DS-DIGI.TTF);
+}
+
+.bodymorningBG {
+  background-color: #1da1c2;
+}
+
+.bodymiddleDayBG {
+  background-color: #33ccff;
+}
+
+.bodyafternoonBG {
+  background-color: #0a2a88;
+}
+
+.bodynightBG {
+  background-color: #070742;
+}
+
+.morningBG {
+  background: linear-gradient(to bottom, #1da1c2 0%, #ffff99 180%);
+}
+
+.middleDayBG {
+  background: linear-gradient(to bottom, #33ccff 0%, #ffffff 100%);
+}
+
+.afternoonBG {
+  background: linear-gradient(to bottom, #0a2a88 0%, #ffcccc 250%);
+  color: #66ff99;
+}
+
+.nightBG {
+  background: linear-gradient(to bottom, #070742 0%, #9999ff 280%);
+  color: #66ff99;
+}
+
+#clockBox {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  /*background-color: lightgray;*/
+}
+
+#clockBox h1 {
+  font-size: 6vw;
+}
+
+#btnChangeFormat {
+  padding: 8px;
+  background-color: rgb(150, 28, 28);
+  border-radius: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+#btnChangeFormat:focus {
+  outline: none;
+}
+
+#btnChangeFormat:hover {
+  background-color: rgb(156, 66, 66);
+}
+
+#btnShowFont {
+  margin-top: 10px;
+  padding: 8px;
+  background-color: rgb(150, 28, 28);
+  border-radius: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+#styleClockBox {
+  margin-top: 10px;
+}
